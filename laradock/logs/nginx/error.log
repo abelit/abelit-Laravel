@@ -250,3 +250,135 @@ PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/boot
 PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 172.18.0.1, server: laradock, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "dataforum.org"
 2016/11/18 06:30:41 [error] 9#9: *238 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
 PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 172.18.0.1, server: laradock, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.5:9000", host: "dataforum.org"
+2016/11/19 15:22:51 [error] 8#8: *11 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 172.21.0.1, server: laradock, request: "GET / HTTP/1.1", upstream: "fastcgi://172.21.0.4:9000", host: "localhost"
+2016/11/19 15:22:54 [error] 8#8: *11 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 172.21.0.1, server: laradock, request: "GET / HTTP/1.1", upstream: "fastcgi://172.21.0.4:9000", host: "localhost"
+2016/11/19 15:22:56 [error] 8#8: *11 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 172.21.0.1, server: laradock, request: "GET / HTTP/1.1", upstream: "fastcgi://172.21.0.4:9000", host: "localhost"
+2016/11/19 15:34:26 [error] 7#7: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 172.21.0.1, server: laradock, request: "GET / HTTP/1.1", upstream: "fastcgi://172.21.0.4:9000", host: "localhost"
+2016/11/19 15:35:06 [error] 7#7: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 172.21.0.1, server: laradock, request: "GET / HTTP/1.1", upstream: "fastcgi://172.21.0.4:9000", host: "localhost"
+2016/11/19 15:35:08 [error] 7#7: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/var/www/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/bootstrap/autoload.php on line 17
+PHP message: PHP Fatal error:  require(): Failed opening required '/var/www/bootstrap/../vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/bootstrap/autoload.php on line 17" while reading response header from upstream, client: 172.21.0.1, server: laradock, request: "GET / HTTP/1.1", upstream: "fastcgi://172.21.0.4:9000", host: "localhost"
+2016/11/19 22:01:41 [error] 8#8: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Ex...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLo
+2016/11/19 22:01:44 [error] 8#8: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Ex...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLo
+2016/11/19 22:01:45 [error] 8#8: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Ex...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLo
+2016/11/19 22:01:46 [error] 8#8: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Ex...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLo
+2016/11/19 22:01:47 [error] 8#8: *20 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Ex...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLo
+2016/11/19 22:02:53 [error] 10#10: *26 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Ex...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->write
+2016/11/19 22:03:24 [error] 7#7: *29 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Ex...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLo
+2016/11/19 22:03:27 [error] 7#7: *29 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(UnexpectedValueException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(UnexpectedValueException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLog('error', Object(UnexpectedValueException), Array)
+#5 /var/www/vendor/laravel/framework/src/Illuminate/Foundation/Ex...
+PHP message: PHP Fatal error:  Uncaught UnexpectedValueException: The stream or file "/var/www/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied in /var/www/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:107
+Stack trace:
+#0 /var/www/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Monolog\Handler\StreamHandler->write(Array)
+#1 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(336): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#2 /var/www/vendor/monolog/monolog/src/Monolog/Logger.php(615): Monolog\Logger->addRecord(400, Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#3 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(202): Monolog\Logger->error(Object(Symfony\Component\Debug\Exception\FatalErrorException), Array)
+#4 /var/www/vendor/laravel/framework/src/Illuminate/Log/Writer.php(113): Illuminate\Log\Writer->writeLo
